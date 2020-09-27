@@ -5,3 +5,13 @@ class MenuItem:
     
     def info(self):
         return self.name + ': $' + str(self.price)
+    
+    def get_total_price(self, count):
+        total_price = self.price * count
+
+    
+        if count >= 3:
+            total_price *= 0.9
+            return total_price
+        
+        return round(total_price)

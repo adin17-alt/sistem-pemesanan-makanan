@@ -15,3 +15,15 @@ for menu_item in menu_items :
     index += 1
 
 print('--------------------')
+
+order = int(input('Silahkan masukkan nomor urut menu untuk memesan :'))
+
+selected_menu = menu_items[order]
+
+#Terima Input dari console
+
+count = int(input('Jumlah pesanan (diskon 10% untuk pembelian 3 item atau lebih) :'))
+
+result = selected_menu.get_total_price(count)
+
+print('Total harga adalah $'+str(result))
