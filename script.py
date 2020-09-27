@@ -8,8 +8,10 @@ menu_item4 = MenuItem('Nasi Goreng', 2)
 
 menu_items = [menu_item1, menu_item2, menu_item3, menu_item4]
 
-for menu_item in menu_items :
-    print(menu_item.info())
+index = 0
 
+for menu_item in menu_items :
+    print(str(index) +'.'+ menu_item.info())
+    index += 1
 
 print('--------------------')
